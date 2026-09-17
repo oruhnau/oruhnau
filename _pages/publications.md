@@ -4,6 +4,10 @@ permalink: /publications/
 title: publications
 nav: true
 nav_order: 2
+_styles: >
+  .container {
+    max-width: calc(930px + (100vw - 930px) / 2);
+  }
 ---
 
 <!-- _pages/publications.md -->
