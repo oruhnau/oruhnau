@@ -24,7 +24,7 @@ latest_posts:
 
 I am an Assistant Professor of Energy Market Design at the [University of Cologne](https://www.uni-koeln.de/) and a Senior Scientist at the affiliated [Institute of Energy Economics (EWI)](https://www.ewi.uni-koeln.de/).
 
-As an energy economist, most of my research focuses on electricity market design. I aim to understand current trends in electricity markets — including renewable energy, battery storage, and electrification — and to help design these markets in ways that channel these trends to the benefit of society. I combine numerical models of energy systems and markets with empirical methods for causal inference.
+As an energy economist, I study current trends in energy markets — including renewable energy, battery storage, electrification, and demand flexibility — and how market design can help shape these trends to the benefit of society. I combine numerical models of energy systems and markets with empirical methods for causal inference.
 
 I am also the Founder and Director of the consultancy [tournesol energy](https://tournesol.energy/), a Co-director of the [Strommarkttreffen](https://www.strommarkttreffen.org/english/) network, and an Affiliate Mamber of the [CESifo](https://www.ifo.de/en/cesifo/cesifo-homepage) research network.
 
