@@ -13,10 +13,24 @@ overrides:
     gem_version: 1.0.15
     upstream_path: _includes/header.liquid
     upstream_sha256: c8663513baded68d9fa5fbe4d6363a976535bbe201efe5138243d0ff03101058
-    local_sha256: ed1a21e7e5682a188fb53d01cdc95175b6d1f52f04a925b82ed2f0edbe92a3c5
+    local_sha256: 75096b6ab6d2e79b0d5b1ae282735b868f1504ebdceb35726309dfd2c2b1d292
     acknowledged_at: '2026-09-17'
     note: >-
-      Removes the hardcoded "About" nav item (the site name already links
-      home). Upstream content reconstructed from the al_folio_core 1.0.15
-      source, not verified via `bundle exec al-folio upgrade overrides
-      audit` — run that command to true up this record.
+      Keeps a "Home" nav item pointing to "/" (relabeled from the upstream
+      "About", which used the homepage's page.title), and drops the
+      font-weight-bold wrapper around the navbar brand's first name.
+      Upstream content reconstructed from the al_folio_core 1.0.15 source,
+      not verified via `bundle exec al-folio upgrade overrides audit` — run
+      that command to true up this record.
+  _layouts/about.liquid:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _layouts/about.liquid
+    upstream_sha256: 2c28eb83b71fe65f252202c11f0b4a19a9b6f1faccdc870b4f91c4ea51d0c6f1
+    local_sha256: a6deefb2a73be13fa867f1771fa93d32eef57ab6cfb01545bf08f99a97c77291
+    acknowledged_at: '2026-09-17'
+    note: >-
+      Drops the font-weight-bold wrapper around the first name in the
+      Home page's <h1> title. Upstream content reconstructed from the
+      al_folio_core 1.0.15 source, not verified via `bundle exec al-folio
+      upgrade overrides audit` — run that command to true up this record.
