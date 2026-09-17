@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-1 abbr">
+    <div class="col col-sm-1 abbr" style="flex: 0 0 8.3333%; max-width: 8.3333%;">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -62,7 +62,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-11{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-11{% endif %}" style="{% if site.enable_publication_thumbnails %}flex: 0 0 83.3333%; max-width: 83.3333%;{% else %}flex: 0 0 91.6667%; max-width: 91.6667%;{% endif %}">
     <!-- Title -->
     <div class="title">
       {% if entry.url %}
