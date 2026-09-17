@@ -68,7 +68,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: true
+      enabled: false
     distill:
       enabled: true
   compat:
@@ -211,6 +211,7 @@ exclude:
   - AGENTS.md
   - _pages/repositories.md
   - _pages/teaching.md
+  - _pages/cv.md
   - al-folio-upgrade-report.md
   - bin/
   - CLAUDE.md
