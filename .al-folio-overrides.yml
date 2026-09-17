@@ -8,3 +8,15 @@ overrides:
     upstream_sha256: f3c547969ef76219ca1eb21df09dce5a3daf32a1f491b1586f68e3213fa35f53
     local_sha256: f70ba4d7686ef9544947cbda9059afc60296ba1499622d813d7d364e57c1ba84
     acknowledged_at: '2026-09-17'
+  _includes/header.liquid:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _includes/header.liquid
+    upstream_sha256: c8663513baded68d9fa5fbe4d6363a976535bbe201efe5138243d0ff03101058
+    local_sha256: ed1a21e7e5682a188fb53d01cdc95175b6d1f52f04a925b82ed2f0edbe92a3c5
+    acknowledged_at: '2026-09-17'
+    note: >-
+      Removes the hardcoded "About" nav item (the site name already links
+      home). Upstream content reconstructed from the al_folio_core 1.0.15
+      source, not verified via `bundle exec al-folio upgrade overrides
+      audit` — run that command to true up this record.
