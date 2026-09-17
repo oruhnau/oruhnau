@@ -83,7 +83,7 @@
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-        {% assign author_array_limit = site.max_author_limit %}
+        {% assign author_array_limit = site.truncated_author_count | default: site.max_author_limit %}
       {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
@@ -131,11 +131,12 @@
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+      {%- assign more_authors_count_label = more_authors | append: ' more author' -%}
       {% if more_authors > 0 %}
         {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
+          {% assign more_authors_count_label = more_authors_count_label | append: 's' %}
         {%- endif -%}
+        {% assign more_authors_collapsed_label = 'others' %}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
@@ -147,11 +148,11 @@
         , and
         <span
           class="more-authors"
-          title="click to view {{ more_authors_hide }}"
+          title="click to view {{ more_authors_count_label }}"
           onclick="
               var element = this;
               element.setAttribute('title', '');
-              var more_authors_text = element.textContent == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+              var more_authors_text = element.textContent == '{{ more_authors_collapsed_label }}' ? '{{ more_authors_show }}' : '{{ more_authors_collapsed_label }}';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.innerHTML = more_authors_text.substring(0, cursorPosition + 1);
@@ -161,7 +162,7 @@
             }, '{{ site.more_authors_animation_delay }}');
           "
         >
-          {{- more_authors_hide -}}
+          {{- more_authors_collapsed_label -}}
         </span>
       {% endif %}
       {% if entry.annotation %}
