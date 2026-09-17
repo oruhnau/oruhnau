@@ -22,8 +22,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an Assistant Professor of Energy Market Design at the [University of Cologne](https://www.uni-koeln.de/), a Senior Scientist at the affiliated [Institute of Energy Economics (EWI)](https://www.ewi.uni-koeln.de/), and the Founder and Director of the consultancy [tournesol energy](https://tournesol.energy/).
+I am an Assistant Professor of Energy Market Design at the [University of Cologne](https://www.uni-koeln.de/) and a Senior Scientist at the affiliated [Institute of Energy Economics (EWI)](https://www.ewi.uni-koeln.de/).
 
 As an energy economist, most of my research focuses on electricity market design. I aim to understand current trends in electricity markets — including renewable energy, battery storage, and electrification — and to help design these markets in ways that channel these trends to the benefit of society. I combine numerical models of energy systems and markets with empirical methods for causal inference.
+
+I am also the Founder and Director of the consultancy [tournesol energy](https://tournesol.energy/), a Co-director of the [Strommarkttreffen](https://www.strommarkttreffen.org/english/) network, and an Affiliate Mamber of the [CESifo](https://www.ifo.de/en/cesifo/cesifo-homepage) research network.
 
 Previously, I was a doctoral and postdoctoral researcher at the [Hertie School](https://www.hertie-school.org/en/) in Berlin.
