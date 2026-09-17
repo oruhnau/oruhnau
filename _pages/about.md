@@ -2,10 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: >
-  Assistant Professor of Energy Market Design, <a href="https://www.ewi.uni-koeln.de/">University of Cologne</a> &middot;
-  Senior Scientist, <a href="https://www.ewi.uni-koeln.de/">EWI</a> &middot;
-  Founder & Director, <a href="https://tournesol.energy/">tournesol energy</a>
 
 profile:
   align: right
